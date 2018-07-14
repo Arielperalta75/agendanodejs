@@ -6,7 +6,7 @@ module.exports.crearUsuarioDemo = function(callback){ //Función para crear usua
     if (error){ //Acciones si existe un error
       if (error.code == 11000){ //Verificar si el nombre de usuario (PrimaryKey) del existe
          // callback("Ingrese los datos para poder iniciar la Agenda")
-        callback("Utilice los siguientes datos: </br>usuario: ariel | password:12345 </br>usuario: juan | password:00000")  Mostrar mensaje
+        callback("Utilice los siguientes datos: </br>usuario: ariel | password:12345 </br>usuario: juan | password:00000")  //Mostrar mensaje
       }else{
         callback(error.message) //Mostrar mensaje de error
       }
